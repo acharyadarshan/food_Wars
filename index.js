@@ -11,8 +11,6 @@ router.get("/", function (req, res) {
 
 app.use(express.static(path));
 app.use("/", router);
-app.use("/", foodRoutes);
-
 app.listen(port, function () {
   console.log("App listening on port " + port);
 });
